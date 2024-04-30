@@ -11,10 +11,23 @@
  */
 
 function checkEligibility() {
-
   const userAge = parseInt(document.getElementById("user-Age").value)
-  const dayOfWeek = parseInt(document.getElementById("day-Of-Week").value)
 
-  if(userAge >= 19)
-  document.
+  if (userAge >= 17) {
+    // output
+    document.getElementById("museum-decision").innerHTML =
+      "You can go see an R rated movie alone."
+  } else if (userAge >= 13) {
+    // output
+    document.getElementById("museum-decision").innerHTML =
+      "You can go see a PG-13 rated movie alone."
+  } else if (userAge >= 5) {
+    // output
+    document.getElementById("museum-decision").innerHTML =
+      "You can go see a G or PG rated movie alone."
+  } else {
+    // output
+    document.getElementById("museum-decision").innerHTML =
+      "Uh, You're too young for most things."
+  }
 }
