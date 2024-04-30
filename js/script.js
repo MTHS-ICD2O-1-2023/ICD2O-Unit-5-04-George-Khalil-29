@@ -1,5 +1,17 @@
-// Copyright (c) 2020 Mr. Coxall All rights reserved
+// Copyright (c) 2024 George Khalil All rights reserved
 //
-// Created by: Mr. Coxall
-// Created on: Sep 2020
+// Created by: George Khalil
+// Created on: Apr 2024
 // This file contains the JS functions for index.html
+
+"use-strict"
+
+/**
+ * This function calculates area of a triangle.
+ */
+
+function checkEligibility() {
+
+  const userAge = parseInt(document.getElementById("user-Age").value)
+  const dayOfWeek = parseInt(document.getElementById("day-Of-Week").value)
+}
