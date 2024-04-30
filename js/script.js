@@ -14,4 +14,7 @@ function checkEligibility() {
 
   const userAge = parseInt(document.getElementById("user-Age").value)
   const dayOfWeek = parseInt(document.getElementById("day-Of-Week").value)
+
+  if(userAge >= 19)
+  document.
 }
