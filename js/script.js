@@ -12,22 +12,17 @@
 
 function checkEligibility() {
   const userAge = parseInt(document.getElementById("user-Age").value)
+  const day = parseInt(document.getElementById("day").value)
+  const option2 = parseInt(document.getElementById("option-2").checked)
+  const option5 = parseInt(document.getElementById("option-5").checked)
 
-  if (userAge >= 17 || day == Monday) {
-    // output
-    document.getElementById("museum-decision").innerHTML =
-      "You can go see an R rated movie alone."
-  } else if (userAge >= 13) {
-    // output
-    document.getElementById("museum-decision").innerHTML =
-      "You can go see a PG-13 rated movie alone."
-  } else if (userAge >= 5) {
-    // output
-    document.getElementById("museum-decision").innerHTML =
-      "You can go see a G or PG rated movie alone."
+  if ((day == option2 || day == option5) || userAge >= 12 && userAge <= 21){
+     document.getElementById("museum-decision").innerHTML = "You can get discount."
+
+  }else if (day == option2 || day == option5){
+      document.getElementById("museum-decision").innerHTML = 'You can get discount.'
+     
   } else {
-    // output
-    document.getElementById("museum-decision").innerHTML =
-      "Uh, You're too young for most things."
+    document.getElementById("museum-decision").innerHTML = 'You must pay regular price.'
   }
 }
