@@ -32,14 +32,14 @@
       <br />
       <div class="page-content">Museum</div>
       <br />
-      <!-- Textfield with Floating Label -->
-
-      <form action="#">
-        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-          <input class="mdl-textfield__input" type="text" id="user-Age">
-          <label class="mdl-textfield__label" for="user-Age">Your Age</label>
-        </div>
-      </form>
+      <!-- Numeric Textfield with Floating Label -->
+<form action="#">
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="user-Age">
+    <label class="mdl-textfield__label" for="user-Age">Your Age...</label>
+    <span class="mdl-textfield__error">Input is not a number!</span>
+  </div>
+</form>
 
       <br />
       <!-- Select with floating label -->
@@ -48,9 +48,13 @@
         <input type="hidden" value="" name="day-Of-Week" />
         <label for="day-Of-Week" class="mdl-textfield__label">Day of the week</label>
         <ul for="day-Of-Week" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
-          <li class="mdl-menu__item" data-val="DEU">Germany</li>
-          <li class="mdl-menu__item" data-val="BLR">Belarus</li>
-          <li class="mdl-menu__item" data-val="RUS">Russia</li>
+          <li class="mdl-menu__item" data-val="SUN">Sunday</li>
+          <li class="mdl-menu__item" data-val="MON">Monday</li>
+          <li class="mdl-menu__item" data-val="TUS">Tusday</li>
+          <li class="mdl-menu__item" data-val="WED">Wensday</li>
+          <li class="mdl-menu__item" data-val="THU">Thursday</li>
+          <li class="mdl-menu__item" data-val="FRI">Friday</li>
+          <li class="mdl-menu__item" data-val="SAT">Saturday</li>
         </ul>
       </div>
       <br />
@@ -59,6 +63,8 @@
         onclick="checkEligibility()">
         Calculate
       </button>
+      <br />
+      <br />
        <div id="museum-decision"></div>
       </form>
     </main>

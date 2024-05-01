@@ -13,7 +13,7 @@
 function checkEligibility() {
   const userAge = parseInt(document.getElementById("user-Age").value)
 
-  if (userAge >= 17) {
+  if (userAge >= 17 || day == Monday) {
     // output
     document.getElementById("museum-decision").innerHTML =
       "You can go see an R rated movie alone."
