@@ -18,10 +18,6 @@ function checkEligibility() {
 
   if ((day == option2 || day == option5) || userAge >= 12 && userAge <= 21){
      document.getElementById("museum-decision").innerHTML = "You can get discount."
-
-  }else if (day == option2 || day == option5){
-      document.getElementById("museum-decision").innerHTML = 'You can get discount.'
-     
   } else {
     document.getElementById("museum-decision").innerHTML = 'You must pay regular price.'
   }
